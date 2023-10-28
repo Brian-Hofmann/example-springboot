@@ -17,7 +17,7 @@
 
   <properties>
     <java.version>17</java.version>
-    <ebean.version>13.10.0</ebean.version>
+    <ebean.version>13.22.0</ebean.version>
   </properties>
 
   <dependencies>
@@ -56,7 +56,7 @@
     <dependency>
       <groupId>io.ebean</groupId>
       <artifactId>querybean-generator</artifactId>
-      <version>13.10.0</version>
+      <version>${ebean.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -78,6 +78,13 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.0</version>
       <scope>test</scope>
     </dependency>
 

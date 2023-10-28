@@ -11,6 +11,7 @@ public class CurrentUser implements CurrentUserProvider {
 
   @Override
   public Object currentUser() {
-    return "test";
+    // Returning null here to ensure test fails when pulling wrong property
+    return null;
   }
 }
